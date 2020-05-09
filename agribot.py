@@ -1,7 +1,5 @@
 from flask import Flask,render_template,request
 app = Flask(__name__)
-import pickle
-import numpy as np
 import pandas as pd
 from nltk.tokenize import word_tokenize 
 from nltk.corpus import stopwords
@@ -10,7 +8,6 @@ import re
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.feature_extraction.text import TfidfVectorizer
-import re
 from sklearn.metrics.pairwise import cosine_similarity
 
 
